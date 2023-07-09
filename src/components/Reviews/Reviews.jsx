@@ -26,10 +26,10 @@ const Reviews = () => {
           .filter((review, index) => index < 10)
           .map(review => {
             const { id, author_details, content } = review;
-            const { author } = author_details;
+            const { username } = author_details;
             return (
               <li key={id}>
-                <h3>{author}</h3>
+                <h3>{username}</h3>
                 <p>{content}</p>
               </li>
             );
