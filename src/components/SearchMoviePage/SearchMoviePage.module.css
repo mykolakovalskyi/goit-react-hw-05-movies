@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+  background-image: url('./magnifying-glass-svgrepo-com.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.input {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.input::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+
+.loadMoreButton {
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.loadMoreButton:hover {
+  background: blue;
+}

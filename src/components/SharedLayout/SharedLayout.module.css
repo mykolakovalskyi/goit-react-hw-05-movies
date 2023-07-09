@@ -1,0 +1,35 @@
+.header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  padding: 16px 30px;
+  font-size: 26px;
+  color: #fff;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.nav {
+  display: flex;
+  gap: 35px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.link:hover {
+  color: rgb(3, 94, 252);
+}
+
+.active {
+  color: rgb(4, 15, 181);
+}
+
+.container {
+  padding: 15px;
+}

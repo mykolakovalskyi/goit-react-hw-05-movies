@@ -1,0 +1,28 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(3, 94, 252);
+}
+
+.wrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image {
+  display: block;
+  width: 380px;
+  height: 500px;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 15px;
+}
