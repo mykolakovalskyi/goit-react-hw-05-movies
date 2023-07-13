@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.1521d271.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.695c9290.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.acc7389c.js",
     "static/js/105.c52494aa.chunk.js": "/goit-react-hw-05-movies/static/js/105.c52494aa.chunk.js",
     "static/css/122.6576c480.chunk.css": "/goit-react-hw-05-movies/static/css/122.6576c480.chunk.css",
     "static/js/122.26c4eb1e.chunk.js": "/goit-react-hw-05-movies/static/js/122.26c4eb1e.chunk.js",
@@ -13,7 +13,7 @@
     "index.html": "/goit-react-hw-05-movies/index.html",
     "static/media/magnifying-glass-svgrepo-com.svg": "/goit-react-hw-05-movies/static/media/magnifying-glass-svgrepo-com.f58d1c82e2afe8af002d.svg",
     "main.1521d271.css.map": "/goit-react-hw-05-movies/static/css/main.1521d271.css.map",
-    "main.695c9290.js.map": "/goit-react-hw-05-movies/static/js/main.695c9290.js.map",
+    "main.acc7389c.js.map": "/goit-react-hw-05-movies/static/js/main.acc7389c.js.map",
     "105.c52494aa.chunk.js.map": "/goit-react-hw-05-movies/static/js/105.c52494aa.chunk.js.map",
     "122.6576c480.chunk.css.map": "/goit-react-hw-05-movies/static/css/122.6576c480.chunk.css.map",
     "122.26c4eb1e.chunk.js.map": "/goit-react-hw-05-movies/static/js/122.26c4eb1e.chunk.js.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.1521d271.css",
-    "static/js/main.695c9290.js"
+    "static/js/main.acc7389c.js"
   ]
 }
