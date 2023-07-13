@@ -8,13 +8,16 @@ const Reviews = () => {
   const REVIEWS_URL = `3/movie/${movieId}/reviews`;
 
   useEffect(() => {
-    getData(REVIEWS_URL)
-      .then(response => {
-        setReviews([...response.data.results]);
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+    const func = async () => {
+      await getData(REVIEWS_URL)
+        .then(response => {
+          setReviews([...response.data.results]);
+        })
+        .catch(error => {
+          console.log(error.message);
+        });
+    };
+    func();
   }, [REVIEWS_URL]);
 
   return (

@@ -8,13 +8,16 @@ const HomePage = () => {
   const location = useLocation();
 
   useEffect(() => {
-    getData(TRENDING_URL)
-      .then(response => {
-        setMovies([...response.data.results]);
-      })
-      .catch(error => {
-        alert(error.message);
-      });
+    const func = async () => {
+      await getData(TRENDING_URL)
+        .then(response => {
+          setMovies([...response.data.results]);
+        })
+        .catch(error => {
+          alert(error.message);
+        });
+    };
+    func();
   }, [TRENDING_URL]);
 
   return (

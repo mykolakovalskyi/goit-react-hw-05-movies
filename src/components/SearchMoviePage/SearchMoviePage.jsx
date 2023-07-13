@@ -30,20 +30,23 @@ const SearchMoviesPage = () => {
   };
 
   useEffect(() => {
-    if (query.trim() === '') {
-      return;
-    }
+    const func = async () => {
+      if (query.trim() === '') {
+        return;
+      }
 
-    searchMovies(MOVIES_URL)
-      .then(response => {
-        const { page, results, total_pages } = response.data;
-        setMovies(prevState => [...prevState, ...results]);
-        setPage(page);
-        setTotalPages(total_pages);
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+      await searchMovies(MOVIES_URL)
+        .then(response => {
+          const { page, results, total_pages } = response.data;
+          setMovies(prevState => [...prevState, ...results]);
+          setPage(page);
+          setTotalPages(total_pages);
+        })
+        .catch(error => {
+          console.log(error.message);
+        });
+    };
+    func();
   }, [MOVIES_URL, query, page]);
 
   return (

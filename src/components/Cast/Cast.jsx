@@ -9,13 +9,16 @@ const Cast = () => {
   const CAST_URL = `3/movie/${movieId}/credits`;
 
   useEffect(() => {
-    getData(CAST_URL)
-      .then(response => {
-        setCast([...response.data.cast]);
-      })
-      .catch(error => {
-        alert(error.message);
-      });
+    const func = async () => {
+      await getData(CAST_URL)
+        .then(response => {
+          setCast([...response.data.cast]);
+        })
+        .catch(error => {
+          alert(error.message);
+        });
+    };
+    func();
   }, [CAST_URL]);
 
   return (

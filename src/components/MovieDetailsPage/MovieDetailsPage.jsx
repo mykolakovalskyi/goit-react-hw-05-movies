@@ -13,13 +13,16 @@ const MovieDetailsPage = () => {
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
-    getData(MOVIE_DETAILS_URL)
-      .then(response => {
-        setDetails({ ...response.data });
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+    const func = async () => {
+      await getData(MOVIE_DETAILS_URL)
+        .then(response => {
+          setDetails({ ...response.data });
+        })
+        .catch(error => {
+          console.log(error.message);
+        });
+    };
+    func();
   }, [MOVIE_DETAILS_URL]);
 
   const {
