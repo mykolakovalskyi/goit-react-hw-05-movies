@@ -1,7 +1,7 @@
 import { useLocation, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import searchMovies from 'Api/searchMovies';
+import getData from 'Api/getData';
 import css from './SearchMoviePage.module.css';
 
 const SearchMoviesPage = () => {
@@ -35,7 +35,7 @@ const SearchMoviesPage = () => {
         return;
       }
 
-      await searchMovies(MOVIES_URL)
+      await getData(MOVIES_URL)
         .then(response => {
           const { page, results, total_pages } = response.data;
           setMovies(prevState => [...prevState, ...results]);
