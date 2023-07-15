@@ -13,11 +13,7 @@ const instance = axios.create({
 });
 
 async function getData(url) {
-  try {
-    return await instance.get(`/${url}`);
-  } catch (error) {
-    console.log(error);
-  }
+  return await instance.get(`/${url}`);
 }
 
 export default getData;
